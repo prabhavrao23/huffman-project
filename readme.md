@@ -8,7 +8,7 @@ The Huffman coding algorithm is a widely used lossless data compression techniqu
 
 **Video showcasing compression/decompression**
 
-
+https://youtu.be/q6NUFBnpKHs
 
 ## **Features**
 
