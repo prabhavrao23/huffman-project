@@ -2,7 +2,7 @@
 
 ## **Project Overview**
 
-I made this project to compress large documents using a Huffman coding algorithm for text compression and decompression. It uses a C++ backend that handles the core compression logic, and a frontend built with Python Flask.
+I made this project to compress large documents using a Huffman coding algorithm for text compression and decompression(58% compression rate). It uses a C++ backend that handles the core compression logic, and a frontend built with Python Flask.
 
 The Huffman coding algorithm is a widely used lossless data compression technique. This project shows its practical use for compressing and decompressing various text-based files, including plain text (.txt) and PDF documents (treated as binary streams).
 
