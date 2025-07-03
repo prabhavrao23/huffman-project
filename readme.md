@@ -1,4 +1,4 @@
-# **Huffman Text Compressor/Decompressor with Web Interface **
+# Huffman Text Compressor/Decompressor with Web Interface 
 
 ## **Project Overview**
 
