@@ -22,15 +22,15 @@ The Huffman coding algorithm is a widely used lossless data compression techniqu
 
 The repository is organized into two main components: the C++ backend and the Python Flask frontend.
 
-your-huffman-project-repo/  
-├── huffman/                \# Contains all C++ source code for the Huffman algorithm  
+your-huffman-project-repo/huffman/
+├── backend/                \# Contains all C++ source code for the Huffman algorithm  
 │   ├── huffman.cpp         \# Core Huffman compression/decompression logic  
 │   ├── huffman.h           \# Header for Huffman class  
 │   ├── main.cpp            \# Command-line interface entry point for C++ executable  
 │   ├── Node.h              \# Definition for Huffman tree nodes  
 │   ├── storage.cpp         \# Handles binary file I/O for compressed data  
 │   └── storage.h           \# Header for Storage class  
-├── huffman\_web\_app/        \# Contains the Python Flask web application  
+├── frontend/        \# Contains the Python Flask web application  
 │   ├── app.py              \# Main Flask application logic  
 │   ├── templates/          \# HTML templates for the web interface  
 │   │   ├── index.html      \# File upload form  
