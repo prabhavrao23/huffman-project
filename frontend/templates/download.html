@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Processed File</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100 p-4">
+    <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-sm border border-gray-200 text-center">
+        <h1 class="text-2xl font-bold text-gray-800 mb-4">File Processed Successfully!</h1>
+        <p class="text-gray-600 mb-6">Your file has been processed. You can download it below:</p>
+
+        <a href="{{ url_for('download_file', filename=filename) }}"
+           class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6
+                  rounded-xl shadow-md transition duration-300 ease-in-out transform hover:scale-105
+                  focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75">
+            Download {{ filename }}
+        </a>
+
+        <div class="mt-8">
+            <a href="/" class="text-blue-500 hover:underline">Go back to upload another file</a>
+        </div>
+    </div>
+</body>
+</html>

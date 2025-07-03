@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Compressor/Decompressor</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100 p-4">
+    <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-md border border-gray-200">
+        <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">Compress / Decompress File</h1>
+
+        <form action="/process" method="post" enctype="multipart/form-data" class="space-y-6">
+            <div>
+                <label for="file" class="block text-sm font-medium text-gray-700 mb-2">Upload File:</label>
+                <input type="file" name="file" id="file" required
+                       class="block w-full text-sm text-gray-500
+                              file:mr-4 file:py-2 file:px-4
+                              file:rounded-full file:border-0
+                              file:text-sm file:font-semibold
+                              file:bg-blue-50 file:text-blue-700
+                              hover:file:bg-blue-100 cursor-pointer
+                              border border-gray-300 rounded-lg p-2.5">
+            </div>
+
+            <div class="flex flex-col space-y-4">
+                <button type="submit" name="operation" value="compress"
+                        class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6
+                               rounded-xl shadow-md transition duration-300 ease-in-out transform hover:scale-105
+                               focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-75">
+                    Compress File
+                </button>
+                <button type="submit" name="operation" value="decompress"
+                        class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6
+                               rounded-xl shadow-md transition duration-300 ease-in-out transform hover:scale-105
+                               focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75">
+                    Decompress File
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+// .vscode/tasks.json
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build huffman_app", // A friendly name for your build task
+            "type": "shell",
+            "command": "g++", // Calls your g++ compiler
+            "args": [
+                "-o",
+                "huffman_app", // Output executable name
+                "huffman.cpp",
+                "storage.cpp",
+                "main.cpp", // Your source files
+                "-std=c++11", // C++ standard
+                "-Wno-narrowing", // Suppress narrowing warnings
+                "-g" // Include debug information for debugging
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}" // Run the command in your project folder
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [ // To capture compiler errors in VS Code
+                "$gcc"
+            ],
+            "detail": "Compiles the Huffman compression/decompression application"
+        }
+    ]
+}

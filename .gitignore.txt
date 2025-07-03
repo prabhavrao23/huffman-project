@@ -1,0 +1,17 @@
+# C++ build artifacts
+.exe
+.o
+huffman_app
+
+# Python cache and environment
+__pycache__
+.venv
+venv
+
+# VS Code files 
+.vscode
+.idea # 
+
+# Uploaded and processed files (user content)
+frontenduploads
+frontendprocessed
