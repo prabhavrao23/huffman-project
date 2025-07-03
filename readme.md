@@ -13,7 +13,7 @@ The Huffman coding algorithm is a widely used lossless data compression techniqu
 ## **Features**
 
 * **Lossless Compression:** Efficiently reduces file size without any loss of data.
-* **58% compression rate
+* **58% compression rate**
 * **Decompression:** Restores compressed files back to their original content.  
 * **File Type Compatibility:** Handles .txt and .pdf files by treating them as binary streams.  
 * **Command-Line** Interface **(C++):** A standalone executable for direct compression/decompression via terminal commands.  
