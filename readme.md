@@ -6,6 +6,10 @@ I made this project to compress large documents using a Huffman coding algorithm
 
 The Huffman coding algorithm is a widely used lossless data compression technique. This project shows its practical use for compressing and decompressing various text-based files, including plain text (.txt) and PDF documents (treated as binary streams).
 
+**Video showcasing compression/decompression**
+
+
+
 ## **Features**
 
 * **Lossless Compression:** Efficiently reduces file size without any loss of data.  
@@ -109,5 +113,5 @@ http://127.0.0.1:5000/
 
 You can now upload .txt or .pdf files to compress or decompress them.
 
-**Video showcasing compression/decompression**
+
 
